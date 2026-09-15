@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التحليل الكهربائي | بيسان طارق</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="electrolysis">
+  <main class="stage">
+    <section class="hero" style="min-height:56vh">
+      <img src="img/electrolysis.png" alt="خلية تحليل كهربائي تتكون فيها فقاعات" />
+      <div class="hero-copy">
+        <div class="kicker">الدليل الأول على الطبيعة الكهربائية للمادة</div>
+        <h1>تجارب التحليل الكهربائي</h1>
+        <p class="lead">فاراداي أرى العلم أن المركب يمكن تفكيكه بالتيار. إذا سارت شحنات داخل المصهور أو المحلول، فالذرة ليست كرة صامتة كما رسمها دالتون.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>فكرة التجربة كيميائياً</h3>
+        <p>نمرّر تياراً كهربائياً في مصهور أيوني أو محلول مركب أيوني.</p>
+        <p class="formula">مهبط: اختزال &nbsp;|&nbsp; مصعد: أكسدة</p>
+        <p class="note">الإلكتروليت يوصل لأن فيه أيونات حرّة الحركة، لا لأن «الكهرباء تسيل كالماء».</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>مختبر تفاعلي: سيري الأيونات</h2>
+      <div class="demo"><canvas id="demo-el"></canvas></div>
+      <div class="controls">
+        <button class="btn" data-el="nacl" type="button">مصهور NaCl</button>
+        <button class="btn" data-el="water" type="button">ماء / أيونات H⁺ و OH⁻</button>
+      </div>
+      <p class="caption">الذهبي نحو المهبط (−) والسيان نحو المصعد (+). هذا هو معنى الهجرة الأيونية.</p>
+    </section>
+
+    <div class="pager" data-pager></div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

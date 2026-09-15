@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اختبار تفاعلي | بيسان طارق</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="quiz">
+  <main class="stage">
+    <div class="kicker">محطة التقويم · من محتوى العرض</div>
+    <h1>اختبار مكونات الذرة</h1>
+    <p class="lead">أجيبي عن الأسئلة بأنواعها المختلفة. كل اختيار يظهر فوراً إن كان صحيحاً أو خاطئاً، مع تلميح سريع من الدرس.</p>
+
+    <div class="quiz-bar card">
+      <div>
+        <strong data-q-progress>السؤال 1 من 12</strong>
+        <div class="quiz-meter"><b data-q-meter style="width:0%"></b></div>
+      </div>
+      <div class="quiz-score">النتيجة: <span data-q-score>0</span> / <span data-q-total>12</span></div>
+    </div>
+
+    <article class="card quiz-panel" data-quiz-root>
+      <!-- يُملأ بالجافاسكربت -->
+    </article>
+
+    <div class="quiz-actions">
+      <button class="btn" type="button" data-q-prev disabled>→ السابق</button>
+      <button class="btn primary" type="button" data-q-next>التالي ←</button>
+      <button class="btn" type="button" data-q-restart hidden>أعيدي الاختبار</button>
+    </div>
+
+    <div class="pager" data-pager></div>
+  </main>
+  <script src="js/app.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

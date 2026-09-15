@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مكونات الذرة | بيسان طارق</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="particles">
+  <main class="stage">
+    <div class="kicker">الثلاثة التي تبني كل جدول دوري</div>
+    <h1>الإلكترون · البروتون · النيوترون</h1>
+    <p class="lead">كل عنصر على الأرض رواية من ثلاثة حروف فقط. الشحنة تكتب الاسم الكيميائي، والنيوترونات تكتب فصل الكتلة.</p>
+
+    <section class="section grid-2">
+      <img class="shot" src="img/nucleus-particles.png" alt="نواة ومكونات الذرة" />
+      <div class="demo"><canvas id="demo-atom"></canvas></div>
+    </section>
+
+    <section class="section grid-3">
+      <article class="card particle-card cyan">
+        <div class="ball e">e⁻</div>
+        <h3>الإلكترون</h3>
+        <p>شحنة −1 · كتلة ≈ 1/1840 من البروتون · خارج النواة.</p>
+      </article>
+      <article class="card particle-card gold">
+        <div class="ball p">p⁺</div>
+        <h3>البروتون</h3>
+        <p>شحنة +1 · كتلة ≈ 1 و.ك.ذ · داخل النواة · عدده = العدد الذري · يحدّد هوية العنصر.</p>
+      </article>
+      <article class="card particle-card">
+        <div class="ball n">n⁰</div>
+        <h3>النيوترون</h3>
+        <p>شحنة صفر · كتلته ≈ كتلة البروتون · داخل النواة.</p>
+      </article>
+    </section>
+
+    <section class="section grid-2">
+      <article class="card">
+        <h3>عددان لا تستغني عنهما الكيمياء</h3>
+        <p class="formula">العدد الذري = عدد البروتونات</p>
+        <p class="formula">العدد الكتلي = العدد الذري + عدد النيوترونات</p>
+        <p>التمثيل الرمزي للذرة أو الأيون: العدد الكتلي فوق الرمز، والعدد الذري تحته.</p>
+        <p class="formula"><sup>23</sup><sub>11</sub>Na</p>
+        <p class="note">مثال: <sup>23</sup><sub>11</sub>Na يعني 11 بروتوناً و 12 نيوتروناً و 11 إلكتروناً في الذرة المتعادلة.</p>
+      </article>
+      <article class="card gold">
+        <h3>جدول المقارنة السريع</h3>
+        <table class="compare">
+          <tr><th>الجسيم</th><th>المكان</th><th>الشحنة</th><th>الدور الكيميائي</th></tr>
+          <tr><td>إلكترون</td><td>سحابة</td><td>−1</td><td>الروابط والأيونات</td></tr>
+          <tr><td>بروتون</td><td>نواة</td><td>+1</td><td>هوية العنصر</td></tr>
+          <tr><td>نيوترون</td><td>نواة</td><td>0</td><td>الكتلة والاستقرار</td></tr>
+        </table>
+      </article>
+    </section>
+
+    <div class="pager" data-pager></div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

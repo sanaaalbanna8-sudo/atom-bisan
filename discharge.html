@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>التفريغ الكهربائي | بيسان طارق</title>
+  <link rel="icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="discharge">
+  <main class="stage">
+    <section class="hero" style="min-height:56vh">
+      <img src="img/cathode-ray.png" alt="أنبوب تفريغ كهربائي وأشعة مهبطية متوهجة" />
+      <div class="hero-copy">
+        <div class="kicker">أنبوبة التفريغ · الأشعة المهبطية</div>
+        <h1>تجارب التفريغ الكهربائي</h1>
+        <p class="lead">هنا وُلد الإلكترون. غاز مخلخل، جهد عالٍ، وشعاع ينطلق من القطب السالب. تومسون قاس النسبة e/m وأعلن: هذا الجسيم أخف من الهيدروجين وأعمّ من أي عنصر.</p>
+      </div>
+    </section>
+
+    <section class="section grid-2">
+      <article class="card">
+        <h3>تركيب أنبوبة التفريغ</h3>
+        <ul>
+          <li>أنبوب زجاجي يُفرَّغ جزئياً من الهواء (ضغط منخفض).</li>
+          <li>قطبان: مهبط سالب، ومصعد موجب.</li>
+          <li>جهد كهربائي مرتفع بين القطبين.</li>
+          <li>يظهر توهج، ثم أشعة تنطلق من المهبط.</li>
+        </ul>
+        <p class="note">سُمّيت الأشعة المهبطية لأنها تخرج من القطب السالب (المهبط)، لا من الموجب.</p>
+      </article>
+      <article class="card gold">
+        <h3>خصائص الأشعة المهبطية</h3>
+        <ol>
+          <li>تسير في خطوط مستقيمة.</li>
+          <li>لا تتغير خصائص الأشعة المهبطية بتغيير مادة المهبط أو بتغيير نوع الغاز داخل الأنبوب.</li>
+          <li>لها طاقة حركية وتدير ريشة خفيفة.</li>
+          <li>تنحرف نحو الصفيحة الموجبة في المجال الكهربائي.</li>
+          <li>تنحرف أيضاً في المجال المغناطيسي.</li>
+        </ol>
+        <p class="formula">الانحراف نحو الموجب ⇒ الشحنة سالبة</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>شغّلي الأنبوب ثم فعّلي المجال</h2>
+      <div class="demo"><canvas id="demo-ray"></canvas></div>
+      <div class="controls">
+        <button class="btn primary" data-ray-on type="button">تشغيل / إيقاف الجهد</button>
+        <button class="btn" data-field type="button">مجال كهربائي</button>
+      </div>
+      <p class="caption">لاحظي انحناء الشعاع عند تشغيل المجال: هذا هو توقيع الإلكترون السالب.</p>
+    </section>
+
+    <div class="pager" data-pager></div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
